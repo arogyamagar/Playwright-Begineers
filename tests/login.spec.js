@@ -2,7 +2,6 @@ import { test, expect } from "@playwright/test";
 
 test("login with valid crendetial", async ({ page }) => {
   await page.goto("https://dev.keela.co/");
-  //   await page.pause();
   await page.getByLabel("Email").click();
   await page.getByLabel("Email").fill("killuasociety@yopmail.com");
   await page.getByLabel("Password").click();
@@ -15,7 +14,6 @@ test("login with invalid credential (valid email but invalid password)", async (
   page,
 }) => {
   await page.goto("https://dev.keela.co/");
-  //   await page.pause();
   await page.getByLabel("Email").click();
   await page.getByLabel("Email").fill("killuasociety@yopmail.com");
   await page.getByLabel("Password").click();
@@ -30,7 +28,6 @@ test("login with invalid credential (invalid email but valid password)", async (
   page,
 }) => {
   await page.goto("https://dev.keela.co/");
-  //   await page.pause();
   await page.getByLabel("Email").click();
   await page.getByLabel("Email").fill("killuasociety@gmail.com");
   await page.getByLabel("Password").click();
@@ -43,7 +40,6 @@ test("login with invalid credential (invalid email but valid password)", async (
 
 test("login with invalid email address", async ({ page }) => {
   await page.goto("https://dev.keela.co/");
-  //   await page.pause();
   await page.getByLabel("Email").click();
   await page.getByLabel("Email").fill("killuasociety");
   await page.getByLabel("Password").click();

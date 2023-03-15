@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "../pages/login";
 
+//Declearing constant for every test.
 const email = "killuasociety@yopmail.com";
 const password = "Hello@123";
 const incorrect_email = "killsociety@yopmail.com";
@@ -8,7 +9,7 @@ const invalid_email = "killuasociety";
 const incorrect_password = "Hell";
 
 test("Test Login with valid credential", async ({ page }) => {
-  const Login = new LoginPage(page);
+  const Login = new LoginPage(page); //Creating a instance of a class
 
   await page.goto("https://dev.keela.co/");
   await Login.enterEmailAddress(email);
