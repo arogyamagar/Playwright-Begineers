@@ -47,9 +47,7 @@
       await page.getByLabel("Password").click();
       await expect(page.getByText("Must be a valid email address.")).toHaveCount(1);
     });
-
-    test.skip("Verify Sign in with Google", async({page})=>{})
-
+    
     test("Verify Hyperlink in Register Oganization",async({page})=>{
       await page.getByText("Register Organization").click();
       await expect(page).toHaveURL(/.register/);
