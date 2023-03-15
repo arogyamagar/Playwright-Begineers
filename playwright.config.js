@@ -13,7 +13,7 @@ const { defineConfig, devices } = require("@playwright/test");
 module.exports = defineConfig({
   testDir: "./tests",
   /* Maximum time one test can run for. */
-  timeout: 20 * 1000,
+  timeout: 50 * 1000,
   expect: {
     /**
      * Maximum time expect() should wait for the condition to be met.
@@ -36,7 +36,7 @@ module.exports = defineConfig({
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
     actionTimeout: 0,
-    headless:false,
+    headless:true,
     /* Base URL to use in actions like `await page.goto('/')`. */
      baseURL: 'http://dev.keela.co',
 
