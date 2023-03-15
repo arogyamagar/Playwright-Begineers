@@ -1,7 +1,6 @@
 {
   "name": "playwrightbegineers",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {},
   "keywords": [],
@@ -9,5 +8,17 @@
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.31.2"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arogyamagar/PlaywrightBegineers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arogyamagar/PlaywrightBegineers/issues"
+  },
+  "homepage": "https://github.com/arogyamagar/PlaywrightBegineers#readme",
+  "description": ""
 }
