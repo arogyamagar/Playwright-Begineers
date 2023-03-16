@@ -9,9 +9,15 @@ export class LoginPage {
   }
 
   //Individual Functions for every fields
-  async loginToKeela(email, password) {
+  async enterEmailAddress(email) {
     await this.email_field.fill(email);
+  }
+
+  async enterPassword(password) {
     await this.password_field.fill(password);
+  }
+
+  async clickLogInBtn() {
     await this.login_button.click();
   }
 }
